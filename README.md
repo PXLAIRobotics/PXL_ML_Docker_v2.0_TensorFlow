@@ -10,7 +10,7 @@ issue.
 !!! Note: Do not clone this repository into a path containing a space !!!*
 
 ## Prerequisites
-* A UNIX-like operating system, preferably Linux. (Ubuntu 20.04 is recommended.)
+* A UNIX-like operating system, preferably Linux. (Ubuntu 20.04+ is recommended.)
 * The `glxinfo` command. (It's included with the `mesa-utils` package on Ubuntu. So, install this on the Linux host before building this repository. On an Ubuntu host, execute `sudo apt install mesa-utils` to install `glxinfo`.)
 * An operational docker daemon.
 * Standard Bash knowledge.
