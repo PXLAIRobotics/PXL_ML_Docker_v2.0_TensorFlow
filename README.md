@@ -43,7 +43,7 @@ To use multiple bash shells in the container, It's advised to either work with
 `tmux` or execute the script with prefix `005` from the host:
 
 ```bash
-   $ ./005_attach_bash_to_noetic_full_desktop.sh
+   $ ./005_attach_bash_to_ml_container.sh
 ```
 
 **Pro-tip: Learn to use `tmux`. It's awesome!**
