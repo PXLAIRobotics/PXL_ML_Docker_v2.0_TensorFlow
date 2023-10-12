@@ -62,7 +62,7 @@ You can run the container without GPU support, but your performance (with Deep L
 
 If you have an Nvidia graphics card capable of running hardware accelerated graphics, follow the instructions in the guide [here](CUDA%20Installation) to install all the necessary drivers, CUDA and the Nvidia docker toolkit. 
 
-You can test GPU support by executing the following steps:
+You can test GPU support by executing the following steps (after having built the container, see [How to build the container](https://github.com/PXLAIRobotics/PXL_ML_Docker_v2.0/tree/main#how-to-build-the-container):
 
 ```
 003_start_pxl_ml_container.sh
