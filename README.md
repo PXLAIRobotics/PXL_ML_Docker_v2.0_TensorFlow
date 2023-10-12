@@ -23,7 +23,7 @@ issue.
 
 - Tensorflow / Keras: 2.14
 - PyTorch: v2.0.1
-- Lightning: 2.0.9
+- PyTorch Lightning: 2.0.9
 - FastAI: 2.7.12
 
 #### Machine Learning Libraries
