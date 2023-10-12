@@ -62,7 +62,22 @@ You can run the container without GPU support, but your performance (with Deep L
 
 If you have an Nvidia graphics card capable of running hardware accelerated graphics, follow the instructions in the guide [here](CUDA%20Installation) to install all the necessary drivers, CUDA and the Nvidia docker toolkit. 
 
+You can test GPU support by executing the following steps:
 
+```bash
+   $ 003_start_pxl_ml_container.sh
+```
+
+```
+nvidia-smi
+```
+
+```
+start_jupyter
+```
+
+Open the TestGPU.ipynb and exectute the different steps.
+ 
 ## How to build the container
 A bash script is provided to build the container, it can be executed by entering
 the following command:
@@ -86,8 +101,12 @@ To use multiple bash shells in the container, It's advised to either work with
    $ ./005_attach_bash_to_ml_container.sh
 ```
 
-**Pro-tip: Learn to use `tmux`. It's awesome!**
-
+## Start jupyter
+To start jupyter notebooks, you can use the command
+```
+start_jupyter
+```
+inside the container.
 
 ## Prebuilt image
 You can find a prebuilt version of the image [right here](https://drive.google.com/drive/folders/1KqxEocjVeOtsky2f2vomWljWc7ir1reJ?usp=sharing).
