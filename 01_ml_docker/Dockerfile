@@ -26,7 +26,7 @@ RUN pip3 install wandb==0.15.12
 RUN pip3 install seaborn==0.13.0
 RUN pip3 install pyarrow==13.0.0
 RUN pip3 install graphviz==0.20.1
-
+RUN pip3 install onnx==1.14.1 onnxruntime==1.16.1
 
 RUN apt-get install graphviz -y
 
