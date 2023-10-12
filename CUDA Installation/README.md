@@ -91,3 +91,7 @@ sudo systemctl restart docker
 docker run --rm --runtime=nvidia --gpus all nvidia/cuda:11.5.2-devel-ubuntu20.04 nvidia-smi
 ```
 
+_**Note**: you can delete this image later, using_
+```
+docker image rm nvidia/cuda:11.5.2-devel-ubuntu20.04
+```
