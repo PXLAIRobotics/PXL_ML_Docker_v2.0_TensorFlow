@@ -25,6 +25,7 @@ RUN pip3 install lightning==2.0.9.post0
 RUN pip3 install wandb==0.15.12
 RUN pip3 install seaborn==0.13.0
 RUN pip3 install pyarrow==13.0.0
+RUN pip3 install graphviz==0.20.1
 
 RUN set -x \
      && apt-get clean && rm -rf /var/lib/apt/lists/* \
