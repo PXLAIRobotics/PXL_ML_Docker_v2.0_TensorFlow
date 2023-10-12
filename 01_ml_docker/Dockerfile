@@ -19,6 +19,10 @@ RUN pip3 install keras
 COPY requirements.txt /tmp/requirements.txt
 RUN pip3 install --no-cache-dir --ignore-installed -r /tmp/requirements.txt
 
+RUN pip3 install torch==2.1.0+cu118 torchaudio==2.1.0+cu118 torchvision==0.16.0+cu118 --index-url https://download.pytorch.org/whl/cu118
+RUN pip3 install fastai==2.7.12
+RUN pip3 install lightning==2.0.9.post0
+
 RUN set -x \
      && apt-get clean && rm -rf /var/lib/apt/lists/* \
 	 && useradd -ms /bin/bash user \
