@@ -34,6 +34,8 @@ issue.
 - matplotlib: 3.8.0
 - plotly: 5.17.0
 - ggplot: 0.11.5
+- PDPbox: 0.3.0
+- tensorboard: 2.14.0
 - ...
 
 #### Deployment Libraries
