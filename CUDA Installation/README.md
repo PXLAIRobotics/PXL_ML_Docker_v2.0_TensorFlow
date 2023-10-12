@@ -1,5 +1,7 @@
 # Nvidia drivers, CUDA & Nvidia-docker installation
-## Removing drivers  
+
+## Ubuntu/Debian
+### Removing drivers  
 
 ```
 sudo apt update && sudo apt upgrade
@@ -10,7 +12,7 @@ sudo apt update && sudo apt upgrade
 sudo apt autoremove nvidia* --purge
 ```
   
-## Install nvidia driver  
+### Install nvidia driver  
 Show all drivers  
 ```
 ubuntu-drivers devices
@@ -46,7 +48,7 @@ Check if gpu is used (the OFF is fine)
 nvidia-smi
 ```
   
-## Install cuda toolkit  
+### Install cuda toolkit  
 ```
 sudo apt update && sudo apt upgrade
 ```
@@ -86,7 +88,7 @@ sudo nvidia-ctk runtime configure --runtime=docker
 sudo systemctl restart docker
 ```
   
-## Test everything
+### Test everything
 ```
 docker run --rm --runtime=nvidia --gpus all nvidia/cuda:11.5.2-devel-ubuntu20.04 nvidia-smi
 ```
