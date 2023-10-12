@@ -65,7 +65,7 @@ If you have an Nvidia graphics card capable of running hardware accelerated grap
 You can test GPU support by executing the following steps:
 
 ```
-   $ 003_start_pxl_ml_container.sh
+003_start_pxl_ml_container.sh
 ```
 
 ```
