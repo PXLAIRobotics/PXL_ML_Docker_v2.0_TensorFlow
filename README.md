@@ -13,20 +13,15 @@ issue.
 * A UNIX-like operating system, preferably Linux. (Ubuntu 20.04 is recommended.)
 * The `glxinfo` command. (It's included with the `mesa-utils` package on Ubuntu. So, install this on the Linux host before building this repository. On an Ubuntu host, execute `sudo apt install mesa-utils` to install `glxinfo`.)
 * An operational docker daemon.
-* Standard Bash and basic ROS knowledge.
-* A Nvidia graphics card capable of running hardware accelerated
-  graphics. Although, any recent AMD or Intel GPU will also work flawlessly.
+* Standard Bash knowledge.
 
-### Known issues
-If Nvidia docker returns the following error:
+### GPU
+You can run the container without GPU support, but your performance (with Deep Learning frameworks) will be low.
 
-```bash
-   Docker: Error response from daemon: could not select device driver "" with capabilities: [[gpu]].
-```
+**Nvidia**
 
-Look at the following site to solve it:
+If you have an Nvidia graphics card capable of running hardware accelerated graphics, follow the instructions in the guide [here](CUDA%20Installation) to install all the necessary drivers, CUDA and the Nvidia docker toolkit. 
 
-[https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#install-guide](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#install-guide)
 
 ## How to build the container
 A bash script is provided to build the container, it can be executed by entering
