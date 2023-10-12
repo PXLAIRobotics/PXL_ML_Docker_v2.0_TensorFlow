@@ -13,42 +13,43 @@ issue.
 
 ### Base Environment
 
-- **Ubuntu**: 22.04
-- **Python**: 3.11
-- **CUDA**: 11.5
+- Ubuntu: 22.04
+- Python: 3.11
+- CUDA: 11.5
 
 ### Libraries
 
 #### Neural Network Libraries
 
-- **Tensorflow / Keras**: 2.14
-- **PyTorch**: v2.0.1
-- **Lightning**: 2.0.9
-- **FastAI**: 2.7.12
+- Tensorflow / Keras: 2.14
+- PyTorch: v2.0.1
+- Lightning: 2.0.9
+- FastAI: 2.7.12
 
 #### Machine Learning Libraries
 
-- **scikitlearn**: 1.3.1
-- **statsmodels**: 0.14.0
-- **prophet**: 1.1.5
+- scikitlearn: 1.3.1
+- statsmodels: 0.14.0
+- prophet: 1.1.5
 - ...
 
 #### Visualization Libraries
 
-- **matplotlib**: 3.8.0
-- **plotly**: 5.17.0
-- **ggplot**: 0.11.5
+- matplotlib: 3.8.0
+- plotly: 5.17.0
+- ggplot: 0.11.5
 - ...
 
 #### Deployment Libraries
 
-- **flask**: 3.0.0
-- **fastapi**: 0.103.2
+- flask: 3.0.0
+- fastapi: 0.103.2
 - ... and much more
 
----
-
 _**Note**: This is just a snapshot of the libraries included. There are many more utilities and libraries embedded within the container._
+
+
+Can you 
 
 
 ## Prerequisites
