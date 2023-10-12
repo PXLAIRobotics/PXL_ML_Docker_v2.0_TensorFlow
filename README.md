@@ -44,7 +44,6 @@ issue.
 
 - flask: 3.0.0
 - fastapi: 0.103.2
-- ... and much more
 
 _**Note**: This is just a snapshot of the libraries included. There are many more utilities and libraries embedded within the container._
 
