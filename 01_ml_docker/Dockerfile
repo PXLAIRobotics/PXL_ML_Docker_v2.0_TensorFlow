@@ -27,6 +27,9 @@ RUN pip3 install seaborn==0.13.0
 RUN pip3 install pyarrow==13.0.0
 RUN pip3 install graphviz==0.20.1
 
+
+RUN apt-get install graphviz -y
+
 RUN set -x \
      && apt-get clean && rm -rf /var/lib/apt/lists/* \
 	 && useradd -ms /bin/bash user \
