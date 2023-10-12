@@ -33,16 +33,19 @@ issue.
 
 - matplotlib: 3.8.0
 - plotly: 5.17.0
+- seaborn: 0.13.0
 - ggplot: 0.11.5
 - PDPbox: 0.3.0
 - tensorboard: 2.14.0
 - Weights & Biases: 0.15.12
+- graphviz: 0.20.1
 - ...
 
 #### Deployment Libraries
 
 - flask: 3.0.0
 - fastapi: 0.103.2
+- onnx: 1.14.1
 
 _**Note**: This is just a snapshot of the libraries included. There are many more utilities and libraries embedded within the container._
 
@@ -50,7 +53,6 @@ _**Note**: This is just a snapshot of the libraries included. There are many mor
 ## Prerequisites
 * A UNIX-like operating system, preferably Linux. (Ubuntu 20.04+ is recommended.) **or** Windows with Docker Desktop installed.
 * 24GB free space (yes, we know)
-* The `glxinfo` command. (It's included with the `mesa-utils` package on Ubuntu. So, install this on the Linux host before building this repository. On an Ubuntu host, execute `sudo apt install mesa-utils` to install `glxinfo`.)
 * An operational docker daemon.
 * Standard Bash knowledge.
 
