@@ -24,7 +24,7 @@ issue.
 
 #### Machine Learning Libraries
 
-- scikitlearn: 1.3.1
+- scikit-learn: 1.3.1
 - statsmodels: 0.14.0
 - prophet: 1.1.5
 - ...
