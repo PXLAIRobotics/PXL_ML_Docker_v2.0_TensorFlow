@@ -1,4 +1,4 @@
-# AnR ML Docker
+# PXL ML Docker v2.0
  This repository contains the necessary elements (code and artifacts) to build a
  Machine Learning container suitable to execute all the ML exercises of the AnR
  course.
