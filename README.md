@@ -36,6 +36,7 @@ issue.
 - ggplot: 0.11.5
 - PDPbox: 0.3.0
 - tensorboard: 2.14.0
+- Weights & Biases: 0.15.12
 - ...
 
 #### Deployment Libraries
