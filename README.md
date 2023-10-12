@@ -76,7 +76,7 @@ nvidia-smi
 start_jupyter
 ```
 
-Open the TestGPU.ipynb and exectute the different steps.
+Open the TestGPU.ipynb notebook and exectute the different steps.
  
 ## How to build the container
 A bash script is provided to build the container, it can be executed by entering
