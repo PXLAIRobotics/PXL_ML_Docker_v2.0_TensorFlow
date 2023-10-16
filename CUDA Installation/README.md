@@ -6,7 +6,8 @@
 ```
 sudo apt update && sudo apt upgrade
 ```
-  
+
+If you have no NVidia drivers already installed, you can skip the next step:
 
 ```
 sudo apt autoremove nvidia* --purge
@@ -49,9 +50,19 @@ nvidia-smi
 ```
   
 ### Install cuda toolkit  
+
+Definitely:
+
 ```
-sudo apt update && sudo apt upgrade
+sudo apt update
 ```
+
+Maybe:
+
+```
+sudo apt upgrade
+```
+(this has the potential to break something with the Nvidia driver)
   
 
 ```
@@ -88,7 +99,7 @@ sudo nvidia-ctk runtime configure --runtime=docker
 sudo systemctl restart docker
 ```
   
-### Test everything
+### (optional) Test everything
 ```
 docker run --rm --runtime=nvidia --gpus all nvidia/cuda:11.5.2-devel-ubuntu20.04 nvidia-smi
 ```
