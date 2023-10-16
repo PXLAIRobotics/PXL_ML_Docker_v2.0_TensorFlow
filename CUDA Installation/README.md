@@ -58,12 +58,11 @@ Definitely:
 sudo apt update
 ```
 
-Maybe:
+Maybe (this has the potential to break something with the Nvidia driver):
 
 ```
 sudo apt upgrade
 ```
-(this has the potential to break something with the Nvidia driver)
   
 
 ```
