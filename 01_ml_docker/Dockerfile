@@ -28,6 +28,11 @@ RUN pip3 install pyarrow==13.0.0
 RUN pip3 install graphviz==0.20.1
 RUN pip3 install onnx==1.14.1 onnxruntime==1.16.1
 
+RUN pip3 install transformers==4.34.1
+RUN pip3 install datasets==2.14.5
+RUN pip3 install sentencepiece==0.1.99
+RUN pip3 install accelerate==0.23.0
+
 RUN apt-get install graphviz -y
 
 RUN set -x \
