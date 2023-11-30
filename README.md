@@ -110,22 +110,4 @@ start_jupyter
 inside the container.
 
 ## Prebuilt image
-You can find a prebuilt version of the image [right here](TBD).
-
-**Important!** 
-
-Make sure to still clone this repository, even if you use the prebuilt image. You will need the necessary scripts (003..., 004...) to make sure everything works correctly.
-
-Extract the tar.bz2 file first.
-
-Use 
-```
-docker load --input pxl_ml_image_v2.0.tar
-```
-to import it, and
-
-```
-003_start_pxl_ml_container.sh
-```
-
-to start it.
+TBD
