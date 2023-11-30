@@ -26,10 +26,9 @@ RUN pip3 install graphviz==0.20.1
 RUN pip3 install treeinterpreter==0.2.3
 RUN pip3 install onnx==1.14.1 onnxruntime==1.16.1 tf2onnx==1.15.1
 
-RUN pip3 install transformers[tf-cpu]==4.34.1
-RUN pip3 install datasets[tf-cpu]==2.14.5
-RUN pip3 install sentencepiece[tf-cpu]==0.1.99
-RUN pip3 install accelerate[tf-cpu]==0.23.0
+RUN pip3 install transformers==4.34.1
+RUN pip3 install datasets==2.14.5
+RUN pip3 install sentencepiece==0.1.99
 
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get install graphviz -y
