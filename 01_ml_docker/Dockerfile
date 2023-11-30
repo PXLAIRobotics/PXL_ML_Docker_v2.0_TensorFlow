@@ -31,7 +31,7 @@ RUN pip3 install datasets==2.14.5
 RUN pip3 install sentencepiece==0.1.99
 RUN pip3 install accelerate==0.23.0
 
-#ARG DEBIAN_FRONTEND=noninteractive
+ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get install graphviz -y
 
 RUN set -x \
