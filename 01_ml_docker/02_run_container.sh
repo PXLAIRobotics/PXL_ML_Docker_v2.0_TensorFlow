@@ -22,7 +22,7 @@ if command -v nvidia-smi &> /dev/null; then
             -p 7777:7777 \
             -p 8080:8080 \
             -p 5000:5000 \
-            pxl_ml_image:latest \
+            pxl_ml_image_tensorflow:latest \
             bash
     else
         echo "CUDA is not present."
@@ -42,7 +42,7 @@ if command -v nvidia-smi &> /dev/null; then
             -p 7777:7777 \
             -p 8080:8080 \
             -p 5000:5000 \
-            pxl_ml_image:latest \
+            pxl_ml_image_tensorflow:latest \
             bash
     fi
 else
@@ -63,6 +63,6 @@ else
         -p 7777:7777 \
         -p 8080:8080 \
         -p 5000:5000 \
-        pxl_ml_image:latest \
+        pxl_ml_image_tensorflow:latest \
         bash
 fi

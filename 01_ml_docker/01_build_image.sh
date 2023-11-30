@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t pxl_ml_image .
+docker build -t pxl_ml_image_tensorflow .
