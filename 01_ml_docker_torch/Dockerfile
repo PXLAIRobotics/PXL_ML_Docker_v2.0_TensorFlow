@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:2.14.0-gpu-jupyter
+FROM pytorch/pytorch:2.1.1-cuda12.1-cudnn8-runtime
 
 # We love UTF!
 ENV LANG C.UTF-8
@@ -11,20 +11,22 @@ RUN set -x \
 
 RUN set -x \
     && pip3 install --upgrade setuptools \
-    && pip3 install powerline-shell
-
-RUN pip3 install keras
+    && pip3 install powerline-shell \
+    && pip3 install jupyter
 
 # Copy requirements.txt and install the Python packages
 COPY requirements.txt /tmp/requirements.txt
 RUN pip3 install --no-cache-dir --ignore-installed -r /tmp/requirements.txt
 
+RUN pip3 install PDPbox==0.3.0
+RUN pip3 install fastai==2.7.13
+RUN pip3 install lightning==2.1.2
 RUN pip3 install wandb==0.15.12
 RUN pip3 install seaborn==0.13.0
 RUN pip3 install pyarrow==13.0.0
 RUN pip3 install graphviz==0.20.1
 RUN pip3 install treeinterpreter==0.2.3
-RUN pip3 install onnx==1.14.1 onnxruntime==1.16.1 tf2onnx==1.15.1
+RUN pip3 install onnx==1.14.1 onnxruntime==1.16.1
 
 RUN pip3 install transformers==4.34.1
 RUN pip3 install datasets==2.14.5
@@ -32,7 +34,7 @@ RUN pip3 install sentencepiece==0.1.99
 RUN pip3 install accelerate==0.23.0
 
 #ARG DEBIAN_FRONTEND=noninteractive
-RUN apt-get install graphviz -y
+#RUN apt-get install -y graphviz
 
 RUN set -x \
      && apt-get clean && rm -rf /var/lib/apt/lists/* \
@@ -40,6 +42,8 @@ RUN set -x \
 	 && echo "user:user" | chpasswd && adduser user sudo \
 	 && echo "user ALL=(ALL) NOPASSWD: ALL " >> /etc/sudoers
 
+# RUN pip3 uninstall -y psutil
+# RUN pip3 install psutil
 
 USER user
 WORKDIR /home/user
