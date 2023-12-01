@@ -48,7 +48,7 @@ _**Note**: This is just a snapshot of the libraries included. There are many mor
 
 ## Prerequisites
 * A UNIX-like operating system, preferably Linux. (Ubuntu 20.04+ is recommended.) **or** Windows with Docker Desktop installed.
-* 17.7GB free space
+* 10.3GB free space
 * An operational docker daemon.
 * Standard Bash knowledge.
 
