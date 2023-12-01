@@ -2,10 +2,6 @@
 This is the official PXL TensorFlow Machine Learning / Deep Learning docker development environment.
 The PyTorch version can be found [here](https://github.com/PXLAIRobotics/PXL_ML_Docker_v2.0_PyTorch).
 
-The container is equipped with a few development tools such as vim, tmux, git,
-... in order to process and analyse (a.k.a. engineer) data and to diagnose any
-issue.
-
 !!! Note: Do not clone this repository into a path containing a space !!!*
 
 ## Docker Container Specifications
