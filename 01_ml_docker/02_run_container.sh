@@ -16,6 +16,7 @@ if command -v nvidia-smi &> /dev/null; then
             -v `pwd`/../notebooks:/home/user/notebooks \
             -v `pwd`/../data:/home/user/data \
             -v `pwd`/../app:/home/user/app \
+            -v `pwd`/../cache:/home/user/.cache \
             -env="XAUTHORITY=$XAUTH" \
             --volume="$XAUTH:$XAUTH" \
             --gpus all \
@@ -35,6 +36,7 @@ if command -v nvidia-smi &> /dev/null; then
             -v `pwd`/../notebooks:/home/user/notebooks \
             -v `pwd`/../data:/home/user/data \
             -v `pwd`/../app:/home/user/app \
+            -v `pwd`/../cache:/home/user/.cache \
             --device=/dev/dri:/dev/dri \
             --env="DISPLAY=$DISPLAY" \
             -e "TERM=xterm-256color" \
@@ -56,6 +58,7 @@ else
         -v `pwd`/../notebooks:/home/user/notebooks \
         -v `pwd`/../data:/home/user/data \
         -v `pwd`/../app:/home/user/app \
+            -v `pwd`/../cache:/home/user/.cache \
         --device=/dev/dri:/dev/dri \
         --env="DISPLAY=$DISPLAY" \
         -e "TERM=xterm-256color" \
