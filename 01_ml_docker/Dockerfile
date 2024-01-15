@@ -31,7 +31,7 @@ RUN pip3 install datasets==2.14.5
 RUN pip3 install sentencepiece==0.1.99
 
 ARG DEBIAN_FRONTEND=noninteractive
-RUN apt-get install graphviz -y
+RUN apt-get update && apt-get install graphviz -y
 RUN apt-get install python3-tk -y
 
 RUN pip3 install jupyter_ai==2.6.0
