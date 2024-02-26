@@ -5,8 +5,8 @@ ENV LANG C.UTF-8
     
 RUN set -x \
     && apt-get update \
-	&& apt-get install -y git vim tmux nano htop sudo curl wget gnupg2 \
-	&& apt-get install -y bash-completion \
+    && apt-get install -y git vim tmux nano htop sudo curl wget gnupg2 \
+    && apt-get install -y bash-completion mesa-utils \
     && apt-get install sudo -y
 
 RUN set -x \
@@ -34,7 +34,8 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install graphviz -y
 RUN apt-get install python3-tk -y
 
-RUN pip3 install jupyter_ai==2.6.0
+RUN pip3 install jupyter_ai==2.6.0 dearpygui
+RUN python3 -m pip install opencv-python
 
 RUN set -x \
      && apt-get clean && rm -rf /var/lib/apt/lists/* \
@@ -54,7 +55,7 @@ COPY --chown=user:user ./.powerline.sh /home/user/.powerline.sh
 
 #
 # Set some decent colors if the container needs to be accessed via /bin/bash.
-RUN echo LS_COLORS=$LS_COLORS:\'di=1\;33:ln=36\' >> ~/.bashrc \
+RUN echo LS_COLORS=$LS_COLORS:\'di=1\;34:ln=36\' >> ~/.bashrc \
         && echo export LS_COLORS >> ~/.bashrc \
         && echo 'source ~/.powerline.sh' >> ~/.bashrc \
         && echo 'alias tmux="tmux -2"' >> ~/.bashrc \
