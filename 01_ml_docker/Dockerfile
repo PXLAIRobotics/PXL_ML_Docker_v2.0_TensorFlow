@@ -36,6 +36,12 @@ RUN apt-get install python3-tk -y
 
 RUN pip3 install jupyter_ai==2.6.0
 
+RUN pip3 install tf-explain==0.3.1
+
+RUN pip3 install plotnine
+RUN pip3 install ydata-profiling[notebook]
+RUN pip3 install pygwalker
+
 RUN set -x \
      && apt-get clean && rm -rf /var/lib/apt/lists/* \
 	 && useradd -ms /bin/bash user \
