@@ -14,6 +14,7 @@ if command -v nvidia-smi &> /dev/null; then
             --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
             -v `pwd`/../commands/bin:/home/user/bin \
             -v `pwd`/../notebooks:/home/user/notebooks \
+            -v `pwd`/../examplecode:/home/user/examplecode \
             -v `pwd`/../data:/home/user/data \
             -v `pwd`/../app:/home/user/app \
             -v `pwd`/../cache:/home/user/.cache \
@@ -34,6 +35,7 @@ if command -v nvidia-smi &> /dev/null; then
             --volume=/tmp/.X11-unix:/tmp/.X11-unix \
             -v `pwd`/../commands/bin:/home/user/bin \
             -v `pwd`/../notebooks:/home/user/notebooks \
+            -v `pwd`/../examplecode:/home/user/examplecode \
             -v `pwd`/../data:/home/user/data \
             -v `pwd`/../app:/home/user/app \
             -v `pwd`/../cache:/home/user/.cache \
@@ -56,6 +58,7 @@ else
         --volume=/tmp/.X11-unix:/tmp/.X11-unix \
         -v `pwd`/../commands/bin:/home/user/bin \
         -v `pwd`/../notebooks:/home/user/notebooks \
+        -v `pwd`/../examplecode:/home/user/examplecode \
         -v `pwd`/../data:/home/user/data \
         -v `pwd`/../app:/home/user/app \
             -v `pwd`/../cache:/home/user/.cache \
