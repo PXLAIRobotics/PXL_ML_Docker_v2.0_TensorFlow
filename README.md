@@ -43,6 +43,12 @@ The PyTorch version can be found [here](https://github.com/PXLAIRobotics/PXL_ML_
 - fastapi: 0.103.2
 - onnx: 1.14.1
 
+#### XAI Libraries
+
+- treeinterpreter
+- tf-explain
+- shap
+
 #### Jupyter AI support
 - jupyter_ai: 2.6.0
 
