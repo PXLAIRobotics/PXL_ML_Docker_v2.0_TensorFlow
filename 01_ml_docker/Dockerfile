@@ -39,9 +39,9 @@ RUN python3 -m pip install opencv-python
 
 RUN pip3 install tf-explain==0.3.1
 
-RUN pip3 install plotnine
-RUN pip3 install ydata-profiling[notebook]
-RUN pip3 install pygwalker
+RUN pip3 install plotnine==0.14.5
+RUN pip3 install pygwalker==0.4.9.14
+RUN pip3 install ydata-profiling[notebook]==4.14.0
 
 RUN set -x \
      && apt-get clean && rm -rf /var/lib/apt/lists/* \
