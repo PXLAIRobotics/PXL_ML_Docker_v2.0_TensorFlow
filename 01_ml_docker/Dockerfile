@@ -34,8 +34,8 @@ ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install graphviz -y
 RUN apt-get install python3-tk -y
 
-RUN pip3 install jupyter_ai==2.6.0 dearpygui
-RUN python3 -m pip install opencv-python
+RUN pip3 install jupyter_ai==2.6.0 dearpygui==2.0.0
+RUN python3 -m pip install opencv-python==4.11.0.86
 
 RUN pip3 install tf-explain==0.3.1
 
